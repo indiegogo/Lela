@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'OCUnit' do |sentest|
     sentest.source_files = 'Lela/**/*.{h,m,mm}'
-    sentest.dependency 'KIF/OCUnit', '~> 3.0'
+    #sentest.dependency 'KIF/OCUnit', '~> 3.0'
 
     # I would expect the following to be inherited but lint disagrees.
     sentest.framework = 'SenTestingKit'
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
 
   s.subspec 'XCTest' do |xctest|
     xctest.source_files = 'Lela/**/*.{h,m,mm}'
-    xctest.dependency 'KIF/XCTest', '~> 3.0'
+    #xctest.dependency 'KIF/XCTest', '~> 3.0'
 
     # I would expect the following to be inherited but lint disagrees.
     xctest.framework = 'XCTest'
